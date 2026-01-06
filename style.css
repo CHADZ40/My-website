@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.logo a:nth-child(2){
+    margin-left: 20px;
+    font-family: "Angkor", serif;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+.logo a:nth-child(1) img{
+    margin-top: 10px;
+}
+
+.function {
+    position: absolute;
+    right: 50px;
+}
+
+.function a{
+    margin-left: 35px;
+    font-family: "Bayon", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.function a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.function a:hover > a:not(:hover){
+    text-decoration: none;
+}
+
+.function a:last-child {
+    background-color: rgb(200, 112, 0);
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.function a:last-child:hover{
+    background-color: rgb(116, 67, 3);
+    cursor: pointer;
+}
+
+.greeting{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.604)),url(kuyteav.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 640px;
+    position: static;
+    color: white;
+    font-family: "Koulen", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting p:nth-child(1){
+    font-size: 40px;
+}
+
+.greeting p a{
+    color: rgb(239, 138, 5);
+}
+
+.greeting p:nth-child(2){
+    font-family: "Taprom", system-ui;
+    font-size: 25px;
+}
+
+.greeting a:nth-child(3){
+    background-color: rgb(239, 138, 5);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 50px black;
+    text-decoration: none;
+    color: white;
+}
+
+.greeting a:nth-child(3):hover{
+    background-color: rgb(200, 112, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about_us{
+    background-color: rgb(231, 231, 231);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us h1{
+    font-family: "Koulen", sans-serif;
+    color: rgb(239, 138, 5);
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.about_us p{
+    font-family: "Dangrek", sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.tabs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: fit-content;
+    margin: 30px;
+}
+
+.tabs div img{
+    position: static;
+    bottom: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.tabs div h2{
+    font-family: "Bayon", sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.tabs div p{
+    font-size: 15px;
+    padding-bottom: 30px;
+    padding: 20px;
+}
+
+.tabs div span{
+    font-family: "Dangrek", sans-serif;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.border{
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+ul li{
+    font-family: "Dangrek", sans-serif;
+    margin-left: 20px;
+}
+
+.tabs div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: none;
+    background-color: rgb(239, 138, 5);
+    width: 380px;
+    height: fit-content;
+    border-radius: 30px;
+    margin-top: 30px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+}
+
+.tabs div:hover{
+    box-shadow: 0 0 30px rgb(239, 138, 5);
+    cursor: pointer;
+}
+
+.google_map iframe{
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.contact{
+    background-color: rgb(23, 42, 93);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h2{
+    font-family: "Preahvihear", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.contact div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    gap: 40px;
+}
+
+.social a{
+    border: 1px dashed white;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.social a:nth-child(1):hover{
+    border-style: solid ;
+    transform: scale(1.1);
+    background-color: white;
+    color: blue;
+    border: none;
+}
+
+.social a:nth-child(2):hover{
+    border-style: solid ;
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.social a:nth-child(3):hover{
+    border-style: solid ;
+    transform: scale(1.1);
+    background-color: rgb(89, 153, 256);
+    color: rgb(255, 255, 255);
+    border-style: solid black;
+    border: none;
+}
+
+.history{
+    background-color: rgb(147, 0, 0);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history h1{
+    font-family: "Bayon", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.history div{
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 90%;
+    border-radius: 30px;
+    border: 1px double rgb(23, 42, 93);
+    border-width: 3px;
+    height: 300px;
+}
+
+.history div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.history div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.history img{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: -3px 3px 10px black;
+}
+
+.history p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    font-family: "Anton", sans-serif;
+    color: rgb(23, 42, 93);
+    font-size: 50px;
+}
+
+
+footer{
+    background-color: rgb(23, 42, 93);
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
