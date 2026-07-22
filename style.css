@@ -79,7 +79,7 @@ header{
 }
 
 .greeting{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.604)),url(kuyteav.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.604)),url(/My-website/images/);
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
